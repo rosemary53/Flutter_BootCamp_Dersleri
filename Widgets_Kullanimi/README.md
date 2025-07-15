@@ -67,12 +67,12 @@ IconButton(
 
 # Tarih eklerken hangi popup  kullanılır ? 
     showDatePicker
-# Burada tarih seçmek için öncelikle bir button tanımlarsın
-# Ardından butona tıklayınca date dialogu açılması için showDatePicker kullanırsın
-# Kullanıcı tarih seçtikten sonra textFieldda yazan yazı değişssin diye tfTarihController.text i güncellersin
-# Kullanıcı bir seçim de yapabilir veya cancel ile iptal de edebilir
-# Eğer iptal ederse geriye null döner bundan dolayı null kontrolü yapılmalıdır
-# Kullanıcı seçim yaptıktan sonra geriye dönen fonksiyon .then((tarihDeger){}); fonksiyonudur.
+- Burada tarih seçmek için öncelikle bir button tanımlarsın
+- Ardından butona tıklayınca date dialogu açılması için showDatePicker kullanırsın
+- Kullanıcı tarih seçtikten sonra textFieldda yazan yazı değişssin diye tfTarihController.text i güncellersin
+- Kullanıcı bir seçim de yapabilir veya cancel ile iptal de edebilir
+- Eğer iptal ederse geriye null döner bundan dolayı null kontrolü yapılmalıdır
+- Kullanıcı seçim yaptıktan sonra geriye dönen fonksiyon .then((tarihDeger){}); fonksiyonudur.
 IconButton( //Icona basınca tarih se.me diyalogu açılacak
        onPressed: (){
         showDatePicker(context: context, firstDate: DateTime(2000), lastDate: DateTime(2030)).then((tarihDegeri){
